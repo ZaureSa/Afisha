@@ -1,7 +1,7 @@
 package ru.netology.qa;
 
 public class PosterManager {
-    String[] posters = new String[0];
+    private String[] posters = new String[0];
     private int posterQuantity;
 
     public PosterManager() {
