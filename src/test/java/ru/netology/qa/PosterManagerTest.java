@@ -34,7 +34,7 @@ public class PosterManagerTest {
     }
 
     @Test
-    public void shouldFindLastFilmsOfFive (){
+    public void shouldFindLastFiveFilms (){
         PosterManager manager = new PosterManager(5);
 
         manager.addFilm("Бладшот");

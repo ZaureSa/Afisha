@@ -32,10 +32,10 @@ public class PosterManager {
         } else {
             postersLimit = posterQuantity;
         }
-        String[] reversed = new String[postersLimit];
-        for (int i = 0; i < reversed.length; i++) {
-            reversed[i] = posters[posters.length - 1 - i];
+        String [] tmp = new String[postersLimit];
+        for (int i = 0; i < tmp.length; i++) {
+            tmp [i] = posters[posters.length - 1 - i];
         }
-        return reversed;
+        return tmp;
     }
 }
