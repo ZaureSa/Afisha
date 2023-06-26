@@ -35,7 +35,7 @@ public class PosterManagerTest {
 
     @Test
     public void shouldFindLastFiveFilms (){
-        PosterManager manager = new PosterManager(5);
+        PosterManager manager = new PosterManager();
 
         manager.addFilm("Бладшот");
         manager.addFilm("Вперед");
@@ -52,7 +52,7 @@ public class PosterManagerTest {
 
     @Test
     public void shouldFindLastThreeFilms () {
-        PosterManager manager = new PosterManager(3);
+        PosterManager manager = new PosterManager();
 
         manager.addFilm("Бладшот");
         manager.addFilm("Вперед");
@@ -67,7 +67,7 @@ public class PosterManagerTest {
 
     @Test
     public void shouldFindLastSevenFilms () {
-        PosterManager manager = new PosterManager(7);
+        PosterManager manager = new PosterManager();
 
         manager.addFilm("Бладшот");
         manager.addFilm("Вперед");
@@ -78,7 +78,7 @@ public class PosterManagerTest {
         manager.addFilm("Номер один");
 
 
-        String[] expected = {"Номер один", "Тролли.Мировой тур", "Человек-невидимка", "Джентельмены", "Отель Белград", "Вперед", "Бладшот"};
+        String[] expected = {"Номер один", "Тролли.Мировой тур", "Человек-невидимка", "Джентельмены", "Отель Белград"};
         String[] actual = manager.findLast();
 
         Assertions.assertArrayEquals(expected,actual);
